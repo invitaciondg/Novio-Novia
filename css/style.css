@@ -697,7 +697,7 @@ section.cuenta-regresiva {
 section.cuenta-regresiva .box-aros {
   width: 500px;
   height: 500px;
-  background: url('../src/img/img_circuloContador01.png') center center no-repeat;
+  background: url('../src/img/png/img_circuloContador01.png') center center no-repeat;
   background-size: cover;
   position: relative;
   z-index: 99;
@@ -1347,7 +1347,7 @@ section.regalos .boton:hover {
 /* Instagram */
 
 section.instagram {
-  /*background: url('../src/img/portada.jpg') center center; */
+  /*background: url('../src/img/jpg/portada.jpg') center center; */
   position: relative;
 }
 
