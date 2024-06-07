@@ -12,21 +12,21 @@
 <title>Boda Sergio y Katherin</title>
 
 <!-- CSS con version dinamica -->
-<link rel="stylesheet" href="css/bootstrap.min.css?v=1688497255">
-<link rel="stylesheet" href="css/slick.css?v=1688497256">
-<link rel="stylesheet" href="css/slick-theme.css?v=1688497256">
-<link rel="stylesheet" href="css/jquery.fancybox.min.css?v=1688497255">
-<link rel="stylesheet" href="css/addEvent.css?v=1688497254">
-<link rel="stylesheet" href="css/aos.css?v=1688497254">
-<link rel="stylesheet" href="css/style.css?v=1688497257">
-<link rel="stylesheet" href="css/responsive.css?v=1688497256">
+<link rel="stylesheet" href="css/bootstrap.min.css?">
+<link rel="stylesheet" href="css/slick.css?">
+<link rel="stylesheet" href="css/slick-theme.css?">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css?">
+<link rel="stylesheet" href="css/addEvent.css?">
+<link rel="stylesheet" href="css/aos.css?">
+<link rel="stylesheet" href="css/style.css?">
+<link rel="stylesheet" href="css/responsive.css?">
 
 <!-- CSS carga oculta de SVG -->
 <style>
     img.injectable {
       visibility: hidden;
     } 
-  
+	
  </style>
 
 <!-- Color tema para navegadores moviles -> color según temática -->
@@ -609,8 +609,12 @@
   <img class="injectable divisor-inferior-fiesta" src="src/img/svg/img_ondas02.svg" alt="">
 
 </section>
-    <!-- Regalos-->
-    <section class="regalos">
+
+
+
+<!-- Regalos-->
+<!--
+<section class="regalos">
 
 
 
@@ -656,6 +660,10 @@
     </div>
   </div>
 </section>
+-->
+
+
+
     <!-- Instagram-->
     <section class="instagram">
 
@@ -851,16 +859,17 @@
 
             <form id="formAsistencia" action="">
 
-
+              <!-- entry y value segun google form-->
               <div class="form-group d-flex justify-content-around custom-control custom-radio custom-control-inline">
                 <div class="form-check">
-                  <input class="form-check-input custom-control-input" type="radio" name="entry.420402224" id="asistencia1" value="¡Sí, confirmo!" checked>
-                  <label class="form-check-label custom-control-label" for="1">
+                  <input class="" type="radio" name="entry.420402224" id="asistencia1" value="Si, confirmo" checked>
+
+                  <label class="" for="1">
                     ¡Sí, confirmo!                  </label>
                 </div>
                 <div class="form-check">
-                  <input class="custom-control-input" type="radio" name="entry.420402224" id="asistencia2" value="No puedo :( ">
-                  <label class="custom-control-label" for="2">
+                  <input class="" type="radio" name="entry.420402224" id="asistencia2" value="No puedo">
+                  <label class="" for="2">
                     No puedo :(                  </label>
                 </div>
               </div>
@@ -871,7 +880,7 @@
 
 
               <div class="form-group">
-                <textarea id="mensajeNovios" class="form-control" name="entry.1700361540" id="" rows="2" placeholder="Ingrese un mensaje para los novios"></textarea>
+                <textarea id="comentariosAsistente" class="form-control" name="entry.1700361540" id="" rows="2" placeholder="Ingrese un mensaje para los novios"></textarea>
               </div>
 
               <input id="eventoAsistencia" type="hidden" name="evento" value="">
@@ -882,7 +891,6 @@
 
             </form>
 
-
           </div>
 
           <div class="msj-content d-flex flex-column justify-content-center"></div>
@@ -890,7 +898,9 @@
         </div>
 
         <div class="modal-footer">
-          <button type="button" id="submit" class="boton">Enviar</button>
+          <button type="button" id="sendAsistencia" class="boton">Enviar</button>
+          <div id="error-message" style="color:red;"></div>
+          <div id="ok-message" style="color:green;"></div>
         </div>
 
       </div>
@@ -899,6 +909,8 @@
 
   </div>
 </div>
+
+
     <!-- Modal sugerir cancion-->
     <div id="modalSugerirCancion" class="modal fade" tabindex="-1">
   <div class="modal-dialog modal-md modal-dialog-centered">
@@ -938,15 +950,15 @@
             <form id="formSugerirCancion" action="">
 
               <div class="form-group">
-                <input type="text" class="form-control" id="nombreSugerencia" name='nombre' placeholder="Tu nombre">
+                <input type="text" class="form-control" id="nombreSugerencia" name='entry.280599116' placeholder="Nombre completo *">
               </div>
 
               <div class="form-group">
-                <input type="text" class="form-control" id="descripcionSugerencia" name='descripcion' placeholder="Nombre de canción y autor">
+                <input type="text" class="form-control" id="descripcionSugerencia" name='entry.482497235' placeholder="Nombre de canción y/o autor">
               </div>
 
               <div class="form-group">
-                <input type="text" class="form-control" id="linkSugerencia" name='link' placeholder="Si lo desea ingrese el link de YouTube, Spotify, etc.">
+                <input type="text" class="form-control" id="linkSugerencia" name='entry.1600241209' placeholder="Si lo desea ingrese el link de YouTube, Spotify, etc.">
               </div>
 
 
@@ -965,12 +977,16 @@
 
         <div class="modal-footer">
           <button type="button" id="sendSugerenciaCancion" class="boton">Sugerir canción</button>
+          <div id="error-message2" style="color:red;"></div>
+          <div id="ok-message2" style="color:green;"></div>
         </div>
 
       </div>
     </div>
   </div>
 </div>
+
+
     <!-- Modal vestuario-->
     <div id="modalVestuario" class="modal fade" tabindex="-1">
   <div class="modal-dialog modal-md modal-dialog-centered">
@@ -1067,7 +1083,10 @@
     </div>
   </div>
 </div>
+
+
     <!-- Modal regalos-->
+<!--
     <div id="modalRegalos" class="modal fade" tabindex="-1">
   <div class="modal-dialog modal-md modal-dialog-centered">
     <div class="modal-content">
@@ -1113,6 +1132,9 @@
     </div>
   </div>
 </div>
+
+
+-->
     <!-- Modal mapa-->
     <div id="modalMapa" class="modal fade" tabindex="-1">
   <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -1408,10 +1430,7 @@
 <script type='text/javascript' src='js/jquery.fancybox.min.js'></script>
 <script type='text/javascript' src='js/aos.js'></script>
 <script type='text/javascript' src='js/svg-inject.min.js'></script>
-<!-- Google form -->
 <script type='text/javascript' src='js/scripts.js'></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
 
 
 <!-- Loader -->
@@ -1734,8 +1753,6 @@
     });
   </script>
 
-
-
   <script>
     /*Modal Confirmar asistencia */
 
@@ -1775,8 +1792,9 @@
 
 
     
-    // Validacion de form.
-    $('#submit').on( 'click', function() {
+    // Envio de datos a google form
+    
+    $('#sendAsistencia').on( 'click', function() {
   
       // Remuevo mensajes de error anteriores
           $("#error-form").remove();
@@ -1784,11 +1802,11 @@
       // Variables del form para validar.
           let asistencia = document.querySelector('input[name="entry.420402224"]:checked').value,
               asistenteNombre = $('#nombreAsistente').val(),
-              asistenteMensaje = $('#mensajeNovios').val(),
+              asistenteMensaje = $('#comentariosAsistente').val(),
               flag = true,
               err = '';
-  
-      // Nombre
+      
+     // Nombre
            if (!asistenteNombre) {
                 flag = false;
                 err = 'El nombre es requerido.';
@@ -1804,34 +1822,71 @@
           }
       
           // Si hay error
-          //if (!flag) {
-          //      $("#error-message").text(err);
-          //      return;
-          //  }
+          if (!flag) {
 
-                  
-  $.ajax({ 
-    url : "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdxNAVXVVIs2RuvzSx1ZQAd2XabCf2cxreDWFG5c3-WSujIBA/formResponse",
-    data: { 
-      "entry.420402224": asistencia, 
-      "entry.751937202": asistenteNombre, 
-      "entry.1700361540" : asistenteMensaje
-    },
-    type: "POST",
-    dataType: "xml",
-    statusCode: {
-      0: function () {
-                    alert('El formulario se ha enviado correctamente.');
-                },
-                200: function () {
-                    alert('El formulario se ha enviado correctamente.');
-                },
-                400: function () {
-                    alert('Hubo un error al enviar el formulario.');
-                }      
-    }
-  })
-});
+                $("#error-message").text(err);
+                //alert(err);
+                return;
+
+                                
+            }
+
+
+
+
+          // verifico si captura data
+          //alert(asistencia);
+          //alert(asistenteNombre);
+          //alert(asistenteMensaje);
+              
+        $.ajax({ 
+          url : "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdxNAVXVVIs2RuvzSx1ZQAd2XabCf2cxreDWFG5c3-WSujIBA/formResponse",
+          data: { 
+            "entry.420402224": asistencia,
+            "entry.751937202": asistenteNombre,
+            "entry.1700361540": asistenteMensaje
+          },
+          type: "POST",
+          dataType: "xml",
+          statusCode: {
+            0: function () {
+                // Muestro mensaje de exito
+                          $("#ok-message").text('El formulario se ha enviado correctamente.');
+                          limpiarformulario();
+                      },
+                      200: function () {
+                          $("#ok-message").text('El formulario se ha enviado correctamente.');
+                          limpiarformulario();
+                      },
+                      400: function () {
+                          $("#ok-message").text('Hubo un error al enviar el formulario.');
+                          limpiarformulario();
+                      }      
+          }
+        });
+
+        //Limpio los campos del formulario
+        function limpiarformulario(){
+          $('#formAsistencia').find('input[type="text"], textarea').val('');
+          $('#formAsistencia').find('input[type="radio"]').prop('checked',false);
+          $('#asistencia1').prop('checked',true);
+          $('#error-message').text('');
+        }
+        
+        // Cierro modal y vuelvo a activar form
+                    setTimeout(function() {
+
+                      $('#modalAsistencia').modal('hide');
+                      $('#modalAsistencia .formulario-content, #modalAsistencia .modal-footer, #modalAsistencia h5').show();
+                      $('#modalAsistencia .msj-content').html('').hide();
+                      $('#modalAsistencia .modal-body').removeClass('fix-height');
+                      $('#ok-message').text('');
+
+                    }, 4000);
+        
+      });
+      
+    
   
 
   </script>
@@ -1885,6 +1940,9 @@
   </script>
 
 
+
+
+
   <!-- Modal sugerir cancion -->
   <script>
     // Abrir modal
@@ -1902,163 +1960,99 @@
     });
 
 
+   // Envio de datos a google form
+    
+  
 
-    // Validacion de form.
-    function isOkSugerirCancion() {
-
-
+    
+    $('#sendSugerenciaCancion').on( 'click', function() {
+  
       // Remuevo mensajes de error anteriores
-      $("#error-form").remove();
-
-      // Variables necesarias para la validacion
-      var flag = true;
-      var err = '';
-
+          $("#error-form").remove();
 
       // Variables del form para validar.
-      var sugerenciaName = $.trim($("#nombreSugerencia").val());
-      var sugerenciaDescription = $.trim($("#descripcionSugerencia").val());
-      var sugerenciaLink = $.trim($("#linkSugerencia").val());
-
-
-
-      // Descripcion
-      if (sugerenciaDescription == '') {
-        flag = false;
-        err = lang_cancionRequerida;
-      } else {
-        if (sugerenciaDescription.length > 50) {
-          flag = false;
-          err = lang_caracteresCancionSugerencia;
-        }
-      }
-
-      // Link
-      if (sugerenciaLink != '') {
-
-        if (!is_url(sugerenciaLink)) {
-          flag = false;
-          err = lang_linkIncorrecto;
-        }
-        if (sugerenciaLink.length > 250) {
-          flag = false;
-          err = lang_caracteresLinkSugerencia;
-        }
-
-      }
-
-      // Nombre
-      if (sugerenciaName == '') {
-        flag = false;
-        err = lang_nombreRequerido;
-      } else {
-        if (sugerenciaName.length > 20) {
-          flag = false;
-          err = lang_caracteresNombreSugerencia;
-        }
-      }
-
-
-      // Si hay error
-      if (flag === false) {
-
-        // Imprimo el error
-        $('#formSugerirCancion').after('<span id="error-form">' + err + '</span>');
-
-      }
-
-      // Retorno el estado de la validacion
-      return flag;
-
-    }
-
-
-
-    // Enviar sugerencia
-    $('body').on('click', '#sendSugerenciaCancion', function(e) {
-
-      e.preventDefault();
-
-
-      if (isOkSugerirCancion()) //Form bien validado
-      {
-
-        // Load and disabled buttom.
-        $("#sendSugerenciaCancion").text(lang_enviandoSugerencia + "...");
-        $("#sendSugerenciaCancion").prop("disabled", true);
-
-        // Obtengo el Form.
-        var formulario = $("#formSugerirCancion")[0];
-
-        // Obtengo los datos del formulario
-        var datos = new FormData(formulario);
-
-
-        // Visualizar como viajan los datos
-        for (var pair of datos.entries()) {
-          console.log(pair[0] + ", " + pair[1]);
-        }
-
-
-        // Envio con fetch los datos mediante POST
-        fetch(_pathApp + "producto/fetchs/sugerir-cancion.php", {
-            method: "POST",
-            body: datos
-          })
-          // Promesas fetch
-          .then(res => res.json())
-          .then(data => {
-
-            // Si recibo error 
-            if (data.error === true) {
-
-              $("#sendSugerenciaCancion").text(lang_sugerirCancion);
-              $("#sendSugerenciaCancion").prop("disabled", false);
-
-              // Imprimo el error
-              $('#formSugerirCancion').after('<span id="error-form">' + data.desc + '</span>');
+          let nombAsistente = $('#nombreSugerencia').val(),
+          nombreCancion = $('#descripcionSugerencia').val(),
+          enlace= $('#linkSugerencia').val(),
+          flag = true,
+          err = '';
+      
+          // Nombre asistente
+           if (!nombAsistente) {
+            flag = false;
+            err = 'Su nombre es requerido.';
+            } else if (nombAsistente.length > 20) {
+                flag = false;
+                err = 'El nombre no debe exceder los 20 caracteres.';
             }
 
-            // Si no hay error 
-            if (data.error === false) {
-
-              $("#sendSugerenciaCancion").text(lang_sugerirCancion);
-              $("#sendSugerenciaCancion").prop("disabled", false);
-
-
-              // Oculto elementos del form y reseteo
-              $('#formSugerirCancion')[0].reset();
-              $('#modalSugerirCancion .formulario-content, #modalSugerirCancion .modal-footer, #modalSugerirCancion h5').hide();
-
-
-              // Acomodo el css para centrar mensaje
-              $('#modalSugerirCancion .modal-body').addClass('fix-height');
-
-
-              // Muestro mensaje de exito
-
-              $('#modalSugerirCancion .msj-content').html(
-                "<h5>" + lang_sugerirCancionMsjExito_1 + "</h5><p>" + lang_sugerirCancionMsjExito_2 + "</p>"
-              ).show();
-
-
-              // Cierro modal y vuelvo a activar form
-              setTimeout(function() {
-
-                $('#modalSugerirCancion').modal('hide');
-                $('#modalSugerirCancion .formulario-content, #modalSugerirCancion .modal-footer, #modalSugerirCancion h5').show();
-                $('#modalSugerirCancion .msj-content').html('').hide();
-                $('#modalSugerirCancion .modal-body').removeClass('fix-height');
-
-              }, 4000);
-
+          // Nombre Cancion
+          if (!nombreCancion) {
+                flag = false;
+                err = 'El nombre de la canción es requerido.';
+            } else if (nombreCancion && nombreCancion.length > 30) {
+                flag = false;
+                err = 'El mensaje no debe exceder los 30 caracteres.';
             }
 
-          });
-      }
+          
+          // Enlace cancion
+          if (enlace && enlace.length > 100) {
+                flag = false;
+                err = 'El mensaje no debe exceder los 100 caracteres.';
+          }
+
+          // Si hay error
+          if (!flag) {
+            $("#error-message2").text(err);
+            //alert(err);
+            return;
+            }
+
+        $.ajax({ 
+          url : "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeLBnTG_trW3wHCHnd5_Y8SMYkdPb2P-EwKl1v4QtjkTY_-2g/formResponse",
+          data: { 
+            "entry.280599116": nombAsistente,
+            "entry.482497235": nombreCancion,
+            "entry.1600241209": enlace
+          },
+          type: "POST",
+          dataType: "xml",
+          statusCode: {
+            0: function () {
+                          $("#ok-message2").text('El formulario se ha enviado correctamente.');
+                          limpiarformulario();
+                      },
+                      200: function () {
+                          $("#ok-message2").text('El formulario se ha enviado correctamente.');
+                          limpiarformulario();
+                      },
+                      400: function () {
+                          $("#ok-message2").text('Hubo un error al enviar el formulario.');
+                          limpiarformulario();
+                      }      
+          }
+        });
+
+        //Limpio los campos del formulario
+        function limpiarformulario(){
+          $('#formSugerirCancion').find('input[type="text"]').val('');
+          $('#error-message2').text('');
+        }
+        
+        // Cierro modal y vuelvo a activar form
+                    setTimeout(function() {
+
+                      $('#modalSugerirCancion').modal('hide');
+                      $('#modalSugerirCancion .formulario-content, #modalSugerirCancion .modal-footer, #modalSugerirCancion h5').show();
+                      $('#modalSugerirCancion .msj-content').html('').hide();
+                      $('#modalSugerirCancion .modal-body').removeClass('fix-height');
+                      $('#ok-message2').text('');
+                    }, 4000);
+        
+      }); 
 
 
-    });
   </script>
 
 
@@ -2092,7 +2086,7 @@
   </script>
 
 
-  <!-- Modal regalos -->
+  <!-- Modal regalos 
   <script>
     // Abrir modal
     $('body').on('click', 'a.modal-regalos', function(e) {
@@ -2105,7 +2099,7 @@
 
     });
   </script>
-
+-->
 
 
   <!-- Modal como llegar 
