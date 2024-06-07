@@ -3,14 +3,14 @@
 :root {
 
   /* Paleta colores */
-  --color-pallete-1: #4d4d4d;
-  --color-pallete-2: #6f0e01;
-  --color-pallete-3: #ffb880;
-  --color-pallete-4: #7c7d4f;
+  --color-pallete-1: rgba(0,0,0,.8);
+  --color-pallete-2: #ab7cce;
+  --color-pallete-3: #ab7cce;
+  --color-pallete-4: #a6bd84;
   --color-pallete-5: #f0f1e9;
   --color-pallete-6: #f2e9dd;
   --color-pallete-7: #FFFCF3;
-  --color-pallete-8: #DD8357;
+  --color-pallete-8: #b57edc;
   --color-pallete-9: #ffffff;
 
 
