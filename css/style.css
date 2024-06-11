@@ -4,7 +4,7 @@
 
   /* Paleta colores */
   --color-pallete-1: rgba(0,0,0,.8);
-  --color-pallete-2: #ab7cce;
+  --color-pallete-2: #9f59d4;
   --color-pallete-3: #ab7cce;
   --color-pallete-4: #a6bd84;
   --color-pallete-5: #f0f1e9;
@@ -12,8 +12,8 @@
   --color-pallete-7: #FFFCF3;
   --color-pallete-8: #b57edc;
   --color-pallete-9: #ffffff;
-
-
+  --color-pallete-10: #a25ad7;
+  --color-pallete-11: #c1a5e7;
   /* ----------------------- */
 
 
@@ -23,8 +23,8 @@
   --color-scroll-track: var(--color-pallete-7);
   --color-scroll-thumb: var(--color-pallete-3);
   --color-scroll-thumb-hover: var(--color-pallete-2);
-  --color-degradez-1: var(--color-pallete-2);
-  --color-degradez-2: var(--color-pallete-8);
+  --color-degradez-1: var(--color-pallete-10);
+  --color-degradez-2: var(--color-pallete-11);
   --color-iconos: var(--color-pallete-3);
   --color-ampersand-portada: var(--color-pallete-3);
   --color-comillas-portada: var(--color-pallete-2);
@@ -42,7 +42,7 @@
   --color-ampersand-musica: var(--color-pallete-3);
   --color-backdrop-modal-musica: var(--color-pallete-5);
   --color-nombres-modal-musica: var(--color-pallete-1);
-  --color-fondo-btns-musica: var(--color-pallete-2);
+  --color-fondo-btns-musica: var(--color-pallete-3);
   --color-txt-btns-musica: var(--color-pallete-9);
   --color-fondo-btns-musica-hover: var(--color-pallete-4);
   --color-txt-btns-musica-hover: var(--color-pallete-9);
@@ -51,12 +51,12 @@
   --color-texto-cuenta-regresiva: var(--color-pallete-1);
   --color-anim-cta-regresiva: var(--color-pallete-3);
   --color-fondo-anim-eventos: var(--color-pallete-9);
-  --color-anim-eventos: var(--color-pallete-1);
+  --color-anim-eventos: var(--color-pallete-2);
   --color-fondo-titulos-eventos: var(--color-pallete-3);
   --color-titulos-eventos: var(--color-pallete-1);
   --color-subtitulos-eventos: var(--color-pallete-1);
   --color-textos-eventos: var(--color-pallete-1);
-  --color-fondo-btns-eventos: var(--color-pallete-2);
+  --color-fondo-btns-eventos: var(--color-pallete-3);
   --color-txt-btns-eventos: var(--color-pallete-9);
   --color-fondo-btns-eventos-hover: var(--color-pallete-4);
   --color-txt-btns-eventos-hover: var(--color-pallete-9);
@@ -69,12 +69,12 @@
   --color-txt-cards: var(--color-pallete-1);
   --color-anim-cards: var(--color-pallete-3);
   --color-shadow-cards: var(--color-pallete-6);
-  --color-fondo-btns-cards: var(--color-pallete-2);
+  --color-fondo-btns-cards: var(--color-pallete-3);
   --color-txt-btns-cards: var(--color-pallete-9);
   --color-fondo-btns-cards-hover: var(--color-pallete-4);
   --color-txt-btns-cards-hover: var(--color-pallete-9);
   --color-anim-regalos: var(--color-pallete-3);
-  --color-fondo-btns-instagram: var(--color-pallete-2);
+  --color-fondo-btns-instagram: var(--color-pallete-3);
   --color-txt-btns-instagram: var(--color-pallete-5);
   --color-fondo-btns-instagram-hover: var(--color-pallete-4);
   --color-txt-btns-instagram-hover: var(--color-pallete-5);
@@ -86,11 +86,11 @@
   --color-txt-firma: var(--color-pallete-9);
   --color-link-firma: var(--color-pallete-9);
   --color-link-firma-hover: var(--color-pallete-8);
-  --color-fondo-btns-regalos: var(--color-pallete-2);
+  --color-fondo-btns-regalos: var(--color-pallete-3);
   --color-txt-btns-regalos: var(--color-pallete-5);
   --color-fondo-btns-regalos-hover: var(--color-pallete-4);
   --color-txt-btns-regalos-hover: var(--color-pallete-5);
-  --color-fondo-btns-modales: var(--color-pallete-2);
+  --color-fondo-btns-modales: var(--color-pallete-3);
   --color-txt-btns-modales: var(--color-pallete-5);
   --color-fondo-btns-modales-hover: var(--color-pallete-4);
   --color-txt-btns-modales-hover: var(--color-pallete-5);
