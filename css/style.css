@@ -26,7 +26,7 @@
   --color-degradez-1: var(--color-pallete-10);
   --color-degradez-2: var(--color-pallete-11);
   --color-iconos: var(--color-pallete-3);
-  --color-ampersand-portada: var(--color-pallete-3);
+  --color-ampersand-portada: var(--color-pallete-11);
   --color-comillas-portada: var(--color-pallete-2);
   --color-frase-portada: var(--color-pallete-1);
   --color-fecha-portada: var(--color-pallete-2);
@@ -39,7 +39,7 @@
   --color-nota-anim-reproductor: var(--color-pallete-2);
   --color-circulos-anim-reproductor: var(--color-pallete-3);
   --color-checkbox: var(--color-pallete-2);
-  --color-ampersand-musica: var(--color-pallete-3);
+  --color-ampersand-musica: var(--color-pallete-11);
   --color-backdrop-modal-musica: var(--color-pallete-5);
   --color-nombres-modal-musica: var(--color-pallete-1);
   --color-fondo-btns-musica: var(--color-pallete-3);
@@ -78,7 +78,7 @@
   --color-txt-btns-instagram: var(--color-pallete-5);
   --color-fondo-btns-instagram-hover: var(--color-pallete-4);
   --color-txt-btns-instagram-hover: var(--color-pallete-5);
-  --color-ampersand-footer: var(--color-pallete-3);
+  --color-ampersand-footer: var(--color-pallete-11);
   --color-nombres-footer: var(--color-pallete-1);
   --color-links-footer: var(--color-pallete-2);
   --color-links-footer-hover: var(--color-pallete-1);
