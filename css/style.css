@@ -922,7 +922,7 @@ section.ceremonia-fiesta .col-fiesta h3 {
   position: relative;
   min-width: 55%;
   padding: 10px 0;
-  background-color: var(--color-fondo-titulos-eventos);
+  background-color: var(--color-pallete-9);
 }
 
 section.ceremonia-fiesta .col-ceremonia h3:before,
