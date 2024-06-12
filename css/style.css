@@ -1169,8 +1169,8 @@ section.fiesta .anim-tips {
   width: 55px;
 }
 
-section.fiesta .anim-tips2 {
-  width: 55px;
+section.fiesta .anim-agenda {
+  width: 95px;
 }
 /* Divisor inferior */
 
@@ -1282,7 +1282,7 @@ section.fiesta .anim-tips path {
   stroke: var(--color-anim-cards);
   stroke-width: 2px;
 }
-section.fiesta .anim-tips2 path {
+section.fiesta .anim-agenda path {
   stroke: var(--color-anim-cards);
   stroke-width: 2px;
 }
