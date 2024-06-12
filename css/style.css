@@ -968,6 +968,11 @@ section.ceremonia-fiesta .info-col .info-box h6 {
   font-size: 33px;
 }
 
+section.ceremonia-fiesta .info-col .info-box .img-ceremonia img{
+  width: 30%;
+}
+
+
 section.ceremonia-fiesta .info-col .info-box p {
   font-family: var(--fuente-2);
   font-weight: var(--grosor-fuente-regular);
@@ -993,11 +998,11 @@ section.ceremonia-fiesta .ondas-2 {
   top: 3%;
 }
 
-section.ceremonia-fiesta .addeventatc .nameBtn {
+section.fiesta .addeventatc .nameBtn {
   color: var(--color-txt-btns-eventos);
 }
 
-section.ceremonia-fiesta .addeventatc:hover .nameBtn {
+section.fiesta .addeventatc:hover .nameBtn {
   color: var(--color-txt-btns-eventos-hover);
 }
 
@@ -1164,6 +1169,9 @@ section.fiesta .anim-tips {
   width: 55px;
 }
 
+section.fiesta .anim-tips2 {
+  width: 55px;
+}
 /* Divisor inferior */
 
 
@@ -1274,7 +1282,10 @@ section.fiesta .anim-tips path {
   stroke: var(--color-anim-cards);
   stroke-width: 2px;
 }
-
+section.fiesta .anim-tips2 path {
+  stroke: var(--color-anim-cards);
+  stroke-width: 2px;
+}
 /* ---------- */
 
 
