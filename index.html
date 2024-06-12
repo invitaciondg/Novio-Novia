@@ -519,7 +519,7 @@
 
 
 
-      <!-- Asistencia -->
+      <!-- Dress Code -->
       <div class="col-md-4 item-fiesta">
 
         <picture>
@@ -527,32 +527,6 @@
           <source type="image/png" srcset="src/img/png/flores_Grupo03.png">
           <img class="adorno adorno-1" src="src/img/png/flores_Grupo03.png" alt="">
         </picture>
-
-        <div class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
-
-          <h3>Asistencia</h3>
-
-
-          <div class=" d-flex justify-content-center align-items-center content-anim-fiesta">
-            <div class="anim-tips"></div>
-          </div>
-
-
-          <p>
-            Información adicional <br> para tener en cuenta          </p>
-
-          <a href="#" data-evento="Ceremonia" class="boton confirmar-asistencia">Confirmar</a>
-          
-
-        </div>
-
-      </div>
-
-      
-
-
-      <!-- Dress Code -->
-      <div class="col-md-4 item-fiesta">
 
         <div class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
 
@@ -576,12 +550,6 @@
       <!-- Canciones -->
       <div class="col-md-4 item-fiesta">
 
-        <picture>
-          <source type="image/webp" srcset="src/img/webp/flores_Grupo04.webp">
-          <source type="image/png" srcset="src/img/png/flores_Grupo04.png">
-          <img class="adorno adorno-1" src="src/img/png/flores_Grupo04.png" alt="">
-        </picture>
-
         <div class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
 
 
@@ -604,6 +572,36 @@
       </div>
 
 
+      <!-- Asistencia -->
+      <div class="col-md-4 item-fiesta">
+
+        <picture>
+          <source type="image/webp" srcset="src/img/webp/flores_Grupo04.webp">
+          <source type="image/png" srcset="src/img/png/flores_Grupo04.png">
+          <img class="adorno adorno-1" src="src/img/png/flores_Grupo04.png" alt="">
+        </picture>
+
+        <div class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
+
+          <h3>Asistencia</h3>
+
+
+          <div class=" d-flex justify-content-center align-items-center content-anim-fiesta">
+            <div class="anim-tips"></div>
+          </div>
+
+
+          <p>
+            Queremos contar contigo <br>confimanos tu participación </p>
+
+          <a href="#" data-evento="Ceremonia" class="boton confirmar-asistencia">Confirmar</a>
+          
+
+        </div>
+
+      </div>
+
+
       <!-- Agendar -->
       <div class="col-md-4 item-fiesta">
 
@@ -613,7 +611,7 @@
 
 
           <div class=" d-flex justify-content-center align-items-center content-anim-fiesta">
-            <div class="anim-tips2"></div>
+            <div class="anim-agenda"></div>
           </div>
 
 
@@ -1416,16 +1414,16 @@
 
    <!-- Animacion Tips -->
   <script>
-    let svgContainerTips2 = document.querySelector('.anim-tips2');
+    let svgContainerAgenda = document.querySelector('.anim-agenda');
 
-    let animTips2 = bodymovin.loadAnimation({
-      wrapper: svgContainerTips2,
+    let animAgenda = bodymovin.loadAnimation({
+      wrapper: svgContainerAgenda,
       animType: 'svg',
       loop: true,
-      path: _pathProducto + "src/img/json/tips2.json"
+      path: _pathProducto + "src/img/json/agenda.json"
     });
 
-    animTips2.play();
+    animAgenda.play();
   </script>
 
 
