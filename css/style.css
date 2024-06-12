@@ -1278,14 +1278,12 @@ section.fiesta .item-fiesta .adorno.adorno-1 {
 
 section.fiesta .anim-musica path,
 section.fiesta .anim-vestuario path,
-section.fiesta .anim-tips path {
-  stroke: var(--color-anim-cards);
-  stroke-width: 2px;
-}
+section.fiesta .anim-tips path,
 section.fiesta .anim-agenda path {
   stroke: var(--color-anim-cards);
   stroke-width: 2px;
 }
+
 /* ---------- */
 
 
